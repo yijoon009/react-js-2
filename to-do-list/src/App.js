@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <div>
-      <h1>My Todos</h1>
+      <h1>My Todos : ({toDos.length}) </h1>
       <form onSubmit={onSubmit}>
         <input
           value={toDo}
