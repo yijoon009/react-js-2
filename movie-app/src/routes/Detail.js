@@ -22,11 +22,13 @@ function Detail() {
       {loading ? (
         <h2>Movie Detail Loading...</h2>
       ) : (
-        <ul>
-          {movieD.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        <div>
+          <ul>
+            {movieD.map((item, index) => (
+              <li key={index}>{item.title}</li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );
